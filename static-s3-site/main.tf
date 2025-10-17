@@ -79,10 +79,7 @@ resource "aws_s3_object" "style" {
   source = "./css/vendor.css"
   content_type = "text/css"
 }
-
-
 # Enable static website host 
-
 
 resource "aws_s3_bucket_website_configuration" "website" {
   bucket = aws_s3_bucket.demo-bucket.bucket
